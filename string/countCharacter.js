@@ -50,8 +50,8 @@ function charCount(st){
     return obj;
 }
 function isAlphaNumeric(code){
-    if( !(code >= 97 && code <= 122) &&  // A-Z
-        !(code >= 65 && code <= 97) &&   // a-z
+    if( !(code >= 97 && code <= 122) &&  // a-z 
+        !(code >= 65 && code <= 97) &&   // A-Z
         !(code >= 48 && code <= 57)){    // 0-9 
       return false;
     }

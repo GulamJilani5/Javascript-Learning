@@ -23,24 +23,22 @@ console.log(isPalindrome("abcba"))
 ////////////////////// METHOD 2
 ////// TWO COUNTER APPROACH
 
-function reverse(str) {
-    let left = 0;
-    let right = str.length - 1;
-    while (left <= right) {
-      if (str[left] !== str[right]) return false;
-      left++;
-      right--;
-    }
-    return true;
-  }
+// function reverse(str) {
+//     let left = 0;
+//     let right = str.length - 1;
+//     while (left <= right) {
+//       if (str[left] !== str[right]) return false;
+//       left++;
+//       right--;
+//     }
+//     return true;
+//   }
   
-  if (reverse("abcba")) console.log("palindrome");
-  else console.log("not palindrome");
+//   if (reverse("abcba")) console.log("palindrome");
+//   else console.log("not palindrome");
 
-
-  //////////////////////////////////////////////////////////////////
-  /////////////////////////////////////
-  
+//////////////////////////////////////////////////////////////////
+/////////////////////////////////////
     /* Read your input here 
     eg: For string variables:   let str = String(readLine()); 
         For int variables: let var_name = parseInt(readLine());
@@ -49,22 +47,17 @@ function reverse(str) {
         function reverse(str){
           let left = 0;
           let right = str.length - 1;
-          let reverseStr = ''
-              while (left <= right){
-                
+          let reverseStr = '';
+          while (left <= right){
                   reverseStr += str.charAt(right);
                   right--;
-              }
-      
-              return reverseStr;      
-          }
-      
+         }
+        return reverseStr;      
+       }
           /*
           Call your function with the input/parameters read above
           eg: let x = example(var_name, arr);
-          */
-          
-      
+          */ 
           const str = 'abcde';
           const rev = reverse(str)
          /*

@@ -49,29 +49,29 @@ function binarySearch(arr, value) {
   /////////////////// METHOD 3
   //////////// RECURSION
   
-  let recursiveFunction = function (arr, value, start, end) {
-    // Base Condition
-    if (start > end) return false;
+  // let recursiveFunction = function (arr, value, start, end) {
+  //   // Base Condition
+  //   if (start > end) return false;
   
-    // Find the middle index
-    let mid = Math.floor((start + end) / 2);
+  //   // Find the middle index
+  //   let mid = Math.floor((start + end) / 2);
   
     // Compare mid with given value
-    if (arr[mid] === value) return true;
+  //   if (arr[mid] === value) return true;
   
-    // If element at mid is greater than value,
-    // search in the left half of mid
-    if (arr[mid] > value) return recursiveFunction(arr, value, start, mid - 1);
-    // If element at mid is smaller than value,
-    // search in the right half of mid
-    else return recursiveFunction(arr, value, mid + 1, end);
-  };
+  //   // If element at mid is greater than value,
+  //   // search in the left half of mid
+  //   if (arr[mid] > value) return recursiveFunction(arr, value, start, mid - 1);
+  //   // If element at mid is smaller than value,
+  //   // search in the right half of mid
+  //   else return recursiveFunction(arr, value, mid + 1, end);
+  // };
   
-  // Driver code
-  let arr = [1, 3, 5, 7, 8, 9];
-  let value = 5;
+  // // Driver code
+  // let arr = [1, 3, 5, 7, 8, 9];
+  // let value = 5;
   
-  if (recursiveFunction(arr, value, 0, arr.length - 1))
-    document.write("Element found!<br>");
-  else document.write("Element not found!<br>");
+  // if (recursiveFunction(arr, value, 0, arr.length - 1))
+  //   document.write("Element found!<br>");
+  // else document.write("Element not found!<br>");
   

@@ -1,15 +1,20 @@
-///////////////////////////////////////
-//////////////////////////
+//////////////////////////////////////////////////////
+/////////////////////////////////////
+////////////////
 
-// function capitalizedWords(arr){
-//     if(arr.length === 0) return arr;
-    
-//     console.log(arr[0])
-//     //return arr.charAt[0].toUpperCase
-//   }
+const finalArr = []
+function capitalizedWords(arr){
+    if(arr.length === 0) return arr;
+    for(const el of arr){
+      // console.log(el[0].toUpperCase())
+      let firstChar = el[0].toUpperCase()
+      finalArr.push(el.replace(el[0], firstChar));
+    }
+    return finalArr;
+  }
   
-//   let words = ['i', 'am', 'learning', 'recursion'];
-//   console.log(capitalizedWords(words)); // ['I', 'AM', 'LEARNING', 'RECURSION']
+  let words = ['i', 'am', 'learning', 'recursion'];
+  console.log(capitalizedWords(words)); // ['I', 'AM', 'LEARNING', 'RECURSION']
 
 
 

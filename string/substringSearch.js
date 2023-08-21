@@ -23,25 +23,25 @@
   ////////////////// METHOD 2
   ////////// include()
   
-//   function subStringSearch(long, short) {
-//     return long.includes(short);
-//   }
-//   const long = "lon loomg ojhomog";
-//   const short = "omg";
-//   const isFound = subStringSearch(long, short);
-//   console.log(isFound);
+  function subStringSearch(long, short) {
+    return long.includes(short);  // It will return true if value is present otherwise false
+  }
+  const long = "lon loomg ojhomog";
+  const short = "omg";
+  const isFound = subStringSearch(long, short);
+  console.log(isFound);
   
   //////////////////////////////////
   //////////////////// METHOD 3
   ////////// indexOf()
   
-  function subStringSearch(long, short) {
-    return long.indexOf(short);
-  }
-  const long = "lon loomg ojhomog";
-  const short = "omg";
-  const isFound = subStringSearch(long, short);
-  // console.log(isFound);
-  if (isFound === -1) console.log("not found");
-  else console.log("found");
+  // function subStringSearch(long, short) {
+  //   return long.indexOf(short);   // It will return -1 if value(search value) is not find in the string(main string)
+  // }
+  // const long = "lon loomg ojhomog";
+  // const short = "omg";
+  // const isFound = subStringSearch(long, short);
+  // // console.log(isFound);
+  // if (isFound === -1) console.log("not found");
+  // else console.log("found");
   

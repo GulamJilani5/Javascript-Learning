@@ -1,7 +1,6 @@
 /////////////////////////////////
 //////////////// METHOD 1
 ///// RECURSION
-
 /*
 function isPalindrome(str){
   ///////Base Case
@@ -20,20 +19,38 @@ console.log(isPalindrome("abcba"))
 */
 
 //////////////////////////////////////////////
-////////////////////// METHOD 2
-////// TWO COUNTER APPROACH
+///////////////////////// METHOD 2
+/////////// TWO COUNTER APPROACH
 
-function reverse(str) {
-    let left = 0;
-    let right = str.length - 1;
-    while (left <= right) {
-      if (str[left] !== str[right]) return false;
-      left++;
-      right--;
-    }
-    return true;
+// function reverse(str) {
+//     let left = 0;
+//     let right = str.length - 1;
+//     while (left <= right) {
+//       if (str[left] !== str[right]) return false;
+//       left++;
+//       right--;
+//     }
+//     return true;
+//   }
+  
+//   if (reverse("abcba")) console.log("palindrome");
+//   else console.log("not palindrome");
+  
+  //////////////////////////////////////////////
+//////////////////////// METHOD 3
+///////// FOR LOOP
+
+function isPalindram(str){
+    let temp = str;
+    let reverse = '';
+
+  for(let i = str.length-1; i >= 0; i--){
+      reverse += str.charAt(i);
   }
-  
-  if (reverse("abcba")) console.log("palindrome");
-  else console.log("not palindrome");
-  
+  console.log(temp, reverse)
+  if(temp === reverse){
+    console.log('palidrom')
+  }
+}
+
+isPalindram('abcba')
