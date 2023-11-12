@@ -1,4 +1,5 @@
-/////////////////////////////////
+/////////////////////////////////////////////////////////
+/////////////////////////////// REVERSING AN STRING
 //////////////// METHOD 1
 ///// RECURSION
 
@@ -33,38 +34,38 @@ console.log(isPalindrome("abcba"))
 //     }
 //     return true;
 //   }
-  
+
 //   if (reverse("abcba")) console.log("palindrome");
 //   else console.log("not palindrome");
 
 //////////////////////////////////////////////////////////////////
-/////////////////////////////////////
-    /* Read your input here 
-    eg: For string variables:   let str = String(readLine()); 
-        For int variables: let var_name = parseInt(readLine());
-        For arrays : const arr = readLine().replace(/\s+$/g, '').split(' ');    
-    */
-        function reverse(str){
-          let left = 0;
-          let right = str.length - 1;
-          let reverseStr = '';
-          while (left <= right){
-                  reverseStr += str.charAt(right);
-                  right--;
-         }
-        return reverseStr;      
-       }
-          /*
-          Call your function with the input/parameters read above
-          eg: let x = example(var_name, arr);
-          */ 
-          const str = 'abcde';
-          const rev = reverse(str)
-         /*
-         Log your output here 
-         console.log(x);
-         */
-        console.log(rev);
-      
-      
-  
+///////////////////////////////////// Method 3
+function reverse(str) {
+  let left = 0;
+  let right = str.length - 1;
+  let reverseStr = "";
+  while (left <= right) {
+    // reverseStr += str.charAt(right);
+    reverseStr += str[right];
+    right--;
+  }
+  return reverseStr;
+}
+
+const str = "abcdefgh";
+const rev = reverse(str);
+console.log(rev);
+
+////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////// METHODs TO REVERSE THE STRING
+// This code splits the string into an array of characters, reverses the order of the
+// characters using the array's reverse() method, and then joins them(arrays) back together into a
+// single string using the join() method.
+
+// function reverseString(str) {
+//   let revStr = str.split("").reverse().join("");
+//   console.log(revStr);
+// }
+
+// const str = "abcde";
+// reverseString(str);

@@ -2,7 +2,7 @@
 //////////////// LOOPING A STRING
 ///////// for...of loop
 const str = '123456';
-for (const char of str) {
+for (let char of str) {
   console.log(char) // It will give value
 }
 
@@ -12,7 +12,7 @@ for (const char of str) {
 
 // const str = 'Jilani';
 
-// for (i in str) {
+// for (let i in str) {
 //   //console.log(i) // It will give index
 //   console.log(str[i]) // It will give value
 // }

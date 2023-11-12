@@ -1,3 +1,6 @@
+//////////////////////////////////////////////////////////////////////////////////////
+////////////// QUESTIONS WAS ASKED BY INTERVIEWER in ConnectWise(InCruiter)
+
 // - get the last names of sales employees
 // - filter the accounting employees who are equal to or older than 30
 const obj = {
@@ -79,9 +82,10 @@ const {accounting, sales} = obj;
 // console.log(typeof accounting)  // (object)array
 
 sales.map((value)=>{
-    const {lastName} = value
+    const {lastName} = value;
     console.log(lastName)
-})
+});
+
 accounting.map((value)=>{
     const {age} = value;
     if(age > 30){

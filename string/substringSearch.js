@@ -36,7 +36,7 @@
   ////////// indexOf()
   
   // function subStringSearch(long, short) {
-  //   return long.indexOf(short);   // It will return -1 if value(search value) is not find in the string(main string)
+  //   return long.indexOf(short);   // It will return -1 if value(search value) is not found in the string(main string)
   // }
   // const long = "lon loomg ojhomog";
   // const short = "omg";

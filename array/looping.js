@@ -4,15 +4,13 @@
 // 1) BASIC FOR LOOP
 // 2) FOR...OF(only for values)
 // 3) FOR...IN(only for index)
-// 40 forEach
-
-
+// 4) forEach
 
 ///////////////////////////
 ////////// SIMPLE FOR LOOP
 ////// METHOD 1(A)
 
- /*const sum = (arr)=>{
+/*const sum = (arr)=>{
     let sum = 0;
     for(let i = 0; i < arr.length; i++){
       sum += arr[i];
@@ -23,12 +21,12 @@
  const add = sum(arr)
  console.log(add)
  */
- 
- ////////////////////////
- ///// FOR ...IN  LOOP
- ///// MEHTOD 1(B)
- 
- /*function sum(arr){
+
+////////////////////////
+////////// FOR ...IN  LOOP
+///// MEHTOD 1(B)
+
+/*function sum(arr){
      let sum = 0;
      for( let i in arr)
          sum += arr[i]
@@ -55,11 +53,10 @@ const arr = [2, 5, 7, 3, 9, 1]
 const add = sum(arr)
 console.log(add)
  */
- 
- ////////////////////////////
- ////// forEach() LOOP
- //// METHOD 1(D)
- /*function sum(arr){
+////////////////////////////
+////// forEach() LOOP
+//// METHOD 1(D)
+/*function sum(arr){
      let sum = 0
     //  arr.forEach( (el, i) =>{
     //     //  sum += el
@@ -76,28 +73,15 @@ console.log(add)
  const add = sum(arr)
  console.log(add)
  */
- 
- /////////////////////////////////
- ///////// reduce() 
- ////METHOD 2
- function sum(arr){
-    const s = arr.reduce( (sum, cur) => sum + cur, 0)
-   //  const s = arr.reduce( (sum, cur) => sum + cur)
-    return s;
+
+/////////////////////////////////
+///////// reduce()
+////METHOD 2
+function sum(arr) {
+  const s = arr.reduce((sum, cur) => sum + cur, 0);
+  //  const s = arr.reduce( (sum, cur) => sum + cur)
+  return s;
 }
-
- const arr = [2, 5, 1, 9, 7, 3]
- const add = sum(arr)
- console.log(add)
-
-
-
-
-
-
-
-
-
-
-
-
+const arr = [2, 5, 1, 9, 7, 3];
+const add = sum(arr);
+console.log(add);

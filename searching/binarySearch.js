@@ -1,15 +1,14 @@
-//////////////////////////////////////////////////
-////////////////////////////METHOD 1
+/////////////////////////////////////////////////////////
+/////////////////////////////// METHOD 1
 /////// ITERATIVE WAY TO IMPLEMENT(DIVIDE AND CONQUER)
-
 function binarySearch(arr, value) {
     let min = 0;
     let max = arr.length - 1;
     let middle = Math.floor((min + max) / 2);
-    console.log(min, max);
+    // console.log(min, max);
     while (min <= max) {
       middle = Math.floor((min + max) / 2);
-      console.log(arr[middle]);
+      // console.log(arr[middle]);
       if (arr[middle] < value) {
         min = middle + 1;
       } else if (arr[middle] > value) {

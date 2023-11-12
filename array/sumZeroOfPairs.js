@@ -14,8 +14,5 @@ function sumZero(arr){
       if(sum < 0)
         left++
     }
-    
-    
   }
-  
   console.log(sumZero([-3,-2,0, 2, 5,10]))
