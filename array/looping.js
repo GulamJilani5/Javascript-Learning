@@ -10,12 +10,12 @@
 ////////// SIMPLE FOR LOOP
 ////// METHOD 1(A)
 
-/*const sum = (arr)=>{
+/*const sum = (arr) => {
     let sum = 0;
     for(let i = 0; i < arr.length; i++){
       sum += arr[i];
  }
- //return sum;
+ //return sum;  
  }
  const arr = [2, 5, 7, 3, 9, 1];
  const add = sum(arr)
@@ -29,7 +29,7 @@
 /*function sum(arr){
      let sum = 0;
      for( let i in arr)
-         sum += arr[i]
+         sum += arr[i];
    return sum;
  }
  
@@ -53,6 +53,7 @@ const arr = [2, 5, 7, 3, 9, 1]
 const add = sum(arr)
 console.log(add)
  */
+
 ////////////////////////////
 ////// forEach() LOOP
 //// METHOD 1(D)

@@ -21,6 +21,7 @@ for (let [key, value] of Object.entries(obj)) {
 ///////////////////////////////////////
 //////////////// LOOPING A STRING
 ///////// for...in loop
+
 // const obj = {
 //    id: 5,
 //    name:'Jilani',

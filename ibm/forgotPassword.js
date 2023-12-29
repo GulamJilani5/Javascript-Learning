@@ -42,6 +42,5 @@ function forgetPassword(asciiValues) {
 
 // const AsciiValues = "796115110113721110141108"; // after reversing it will give - PrepInsta
 const AsciiValues = "79611511011372321110141108"; // after reversing it will give - Prep Insta
-
 const password = forgetPassword(AsciiValues);
 console.log(password); // PrepInsta

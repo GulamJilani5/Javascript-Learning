@@ -5,16 +5,17 @@
 //// Promise returns - resolve(successful) or reject(error)
 //// states - pending, fulfilled, rejected
 
-const settimeoutvsPromise = new Promise ((resolve, reject) => {
-
-    console.log('Promise is starting...')
-    resolve('Promise has executed');
-    // reject('Some error has occured') // We can return it as an error message from the promise.
-})
-
-setTimeout(()=>console.log('setTimeout with 0ms'), 0);
-settimeoutvsPromise.then((res)=>console.log(res)).catch((err)=> {
-    console.log(err)
+const setTimeoutvsPromise = new Promise((resolve, reject) => {
+  console.log("Promise is starting...");
+  resolve("Promise has executed");
+  // reject('Some error has occured') // We can return it as an error message from the promise.
 });
 
-console.log('Synchronous Code');
+setTimeout(() => console.log("setTimeout with 0ms"), 0);
+setTimeoutvsPromise
+  .then((res) => console.log(res))
+  .catch((err) => {
+    console.log(err);
+  });
+
+console.log("Synchronous Code");
