@@ -6,8 +6,11 @@ function areDuplicate(arr) {
   const obj = {};
   for (let i in arr) {
     //  console.log(i) // gives index
-    //  obj[arr[i]] ? (obj[arr[i]] += 1) : (obj[arr[i]] = 1);
-    obj[arr[i]] = ++obj[arr[i]] || 1;
+    //obj[arr[i]] ? (obj[arr[i]] += 1) : (obj[arr[i]] = 1);
+    //obj[arr[i]] = obj[arr[i]] ? (obj[arr[i]] + 1) : 1;
+    obj[arr[i]] = ++obj[arr[i]] || 1; // If obj[arr[i]] is undefined(when first check element will not be the property
+    //  of the object, so undefined), The pre-increment ++obj[arr[i]] would result in NaN because you cannot
+    //  increment undefined or null directly. So ++obj[arr[i]] will be falsy in attempt.
   }
   // for(const el of arr){
   //   obj[el] = ++obj[el] || 1;

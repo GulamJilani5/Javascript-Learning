@@ -14,6 +14,11 @@ Number.prototype.valueOf();
 /* Number Constants*/
 Number.MAX_VALUE;
 Number.MIN_VALUE;
+Number.MAX_SAFE_INTEGER;
+Number.MIN_SAFE_INTEGE;
+Number.NaN;
+Number.POSITIVE_INFINITY;
+Number.NEGATIVE_INFINITY;
 
 /****************** Mathematical Constants *****************/
 Math.ceil(x);
@@ -23,6 +28,8 @@ Math.min(...values);
 Math.random();
 Math.round(x);
 Math.trunc(x);
+Math.pow(base, exponent);
+Math.sqrt(x);
 
 /*************************************************************************************************
                                            STRING
@@ -60,9 +67,7 @@ search(regexp);
 
 *************************************************************************************************/
 
-/*************************************************************************************************
-                                     Mutating Methods:
-*************************************************************************************************/
+/********** ARRAY - Mutating Methods: ******/
 push();
 pop();
 shift(); // remove beginning
@@ -82,9 +87,7 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.sort();
 console.log(fruits);
 
-/************************************************************************************************
-                                     Non-Mutating Methods:
-************************************************************************************************* */
+/********** ARRAY -  Non-Mutating Methods: ******/
 forEach(callback);
 map(callback);
 reduce(callback, initialValue);
@@ -107,28 +110,32 @@ includes(value, fromIndex);
 flat(depth);
 toLocaleString();
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-// Number Methods and Properties
+/*************************************************************************************************       
+                                        NUMBERS
+*************************************************************************************************/
 
 // Static Methods:
-
 Number.isFinite(value); // : //Checks if the value is a finite number.
 Number.isInteger(value); // :Checks if the value is an integer.
 Number.isNaN(value); // : Checks if the value is NaN.
 Number.isSafeInteger(value); // : Checks if the value is a safe integer.
 Number.parseFloat(string); // : Parses a string and returns a floating point number.
 Number.parseInt(string, radix); // : Parses a string and returns an integer of the specified radix.
-// Instance Methods:
 
+// Instance Methods:
 Number.prototype.toFixed(digits); // : Formats a number using fixed-point notation.
 Number.prototype.toString(radix); // : Converts a number to a string in the specified radix.
 Number.prototype.valueOf(); // : Returns the primitive value of a Number object.
-// Number Constants:
 
+// Number Constants:
 Number.MAX_VALUE; // : The maximum numeric value representable in JavaScript.
 Number.MIN_VALUE; // : The smallest positive numeric value representable in JavaScript.
+Number.MAX_SAFE_INTEGER; // : The maximum safe integer in JavaScript (2^53 - 1).
+Number.MIN_SAFE_INTEGE; // : The minimum safe integer in JavaScript (-(2^53 - 1)).
+Number.NaN; // : Special "Not-a-Number" value.
+Number.POSITIVE_INFINITY; // : Positive Infinity (a special value representing infinity).
+Number.NEGATIVE_INFINITY; // : Negative Infinity (a special value representing negative infinity).
+
 // Mathematical Methods (Math Object)
 Math.ceil(x); // : Rounds a number upwards to the nearest integer.
 Math.floor(x); // : Rounds a number downwards to the nearest integer.
@@ -137,6 +144,12 @@ Math.min(...values); // : Returns the smallest of zero or more numbers.
 Math.random(); // : Returns a pseudo-random number between 0 and 1.
 Math.round(x); // : Rounds a number to the nearest integer.
 Math.trunc(x); // : Returns the integer part of a number, removing any fractional digits.
+Math.pow(base, exponent); // : Returns the base to the exponent power.
+Math.sqrt(x); //:  Returns the square root of a number.
+
+/*************************************************************************************************                               
+                                               STRINGS
+*************************************************************************************************/
 
 // String Methods
 charAt(index); // : Returns the character at the specified index.
@@ -164,10 +177,11 @@ trimEnd() / trimRight(); // : Removes whitespace from the end of a string.
 match(regexp); // : Matches a string against a regular expression.
 search(regexp); // : Searches a string for a match against a regular expression.
 
-// Array Methods
+/*************************************************************************************************   
+                                               ARRAY
+*************************************************************************************************/
 
-// Mutating Methods:
-
+/********** ARRAY - Mutating Methods: ******/
 push(); // Adds one or more elements to the end of an array.
 pop(); // : Removes the last element from an array.
 shift(); // : Removes the first element from an array.
@@ -179,9 +193,7 @@ fill(value, start, end); // : Fills all the elements in an array from a start in
 flatMap(callback); // : Maps each element using a mapping function, then flattens the result.
 sort(); // : Sorts the elements of an array in place.
 
-/*
-Non-Mutating Methods:
-*/
+/********** ARRAY -  Non-Mutating Methods: ******/
 forEach(callback); // : Executes a provided function once for each array element.
 map(callback); // : Creates a new array with the results of calling a provided function on every element.
 reduce(callback, initialValue); // : Applies a function against an accumulator and each element to reduce it to a single value.
