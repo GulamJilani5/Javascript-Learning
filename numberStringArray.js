@@ -142,7 +142,7 @@ Math.floor(x); // : Rounds a number downwards to the nearest integer.
 Math.max(...values); // : Returns the largest of zero or more numbers.
 Math.min(...values); // : Returns the smallest of zero or more numbers.
 Math.random(); // : Returns a pseudo-random number between 0 and 1.
-Math.round(x); // : Rounds a number to the nearest integer.
+Math.round(x); // : 0.5 or greater then rounded to next hgiher integer,ex- 1.5, 1.6 === 2.
 Math.trunc(x); // : Returns the integer part of a number, removing any fractional digits.
 Math.pow(base, exponent); // : Returns the base to the exponent power.
 Math.sqrt(x); //:  Returns the square root of a number.
