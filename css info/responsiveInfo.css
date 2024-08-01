@@ -1,0 +1,6 @@
+/*** Aspect ratio ***/
+////////for making images responsive with optimal results,
+/////// If the parent container or viewport size changes, the browser will adjust the element's dimensions to maintain
+/////// the specified width-to-height ratio. ***Aspect ratio works with other elements not just images.
+//////////mobile - square image(1/1)
+///////// destop - square image(16/9)

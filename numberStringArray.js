@@ -15,7 +15,7 @@ Number.prototype.valueOf();
 Number.MAX_VALUE;
 Number.MIN_VALUE;
 Number.MAX_SAFE_INTEGER;
-Number.MIN_SAFE_INTEGE;
+Number.MIN_SAFE_INTEGER;
 Number.NaN;
 Number.POSITIVE_INFINITY;
 Number.NEGATIVE_INFINITY;
@@ -31,9 +31,9 @@ Math.trunc(x);
 Math.pow(base, exponent);
 Math.sqrt(x);
 
-/*************************************************************************************************
-                                           STRING
-*************************************************************************************************/
+/***********************************************************************************************************
+      STRING - Immutable, every time it will create the new string when we manipulate the string.
+************************************************************************************************************/
 
 charAt(index);
 charCodeAt(index);
@@ -42,22 +42,22 @@ substring(indexStart, indexEnd);
 split(separator, limit);
 // concat(str1, str2, ...);
 includes(searchString, position);
-endsWith(searchString, length);
+replace(searchValue, newValue);
 indexOf(searchValue, fromIndex);
 lastIndexOf(searchValue, fromIndex);
 startsWith(searchString, position);
-repeat(count);
-replace(searchValue, newValue);
-localeCompare(compareString, locales, options);
+endsWith(searchString, length);
 toLowerCase();
 toUpperCase();
-toString();
-valueOf();
-padStart(targetLength, padString);
-padEnd(targetLength, padString);
 trim();
 trimStart() / trimLeft();
 trimEnd() / trimRight();
+toString();
+valueOf();
+repeat(count);
+localeCompare(compareString, locales, options);
+padStart(targetLength, padString);
+padEnd(targetLength, padString);
 match(regexp);
 search(regexp);
 
@@ -77,7 +77,7 @@ reverse();
 copyWithin(target, start, end);
 fill(value, start, end);
 flatMap(callback);
-sort(); // Sort based on Unicode character, So good for string elements not for number elements of the array.
+sort(); // Sort based on Unicode character, So good for string elements directly not for number elements of the array.
 // Number elements
 const numbers = [4, 2, 5, 1, 3];
 numbers.sort((a, b) => a - b);
@@ -151,29 +151,39 @@ Math.sqrt(x); //:  Returns the square root of a number.
                                                STRINGS
 *************************************************************************************************/
 
-// String Methods
-charAt(index); // : Returns the character at the specified index.
-charCodeAt(index); // : Returns the Unicode of the character at the specified index.
-slice(beginIndex, endIndex); // : Extracts a part of a string.
-substring(indexStart, indexEnd); // : Extracts characters from a string between two specified indices.
+///// String Methods
+//Inspecting Indivisual(16-Bit) Character Of A String.
+charAt(index) === str[index]; // Returns the character at the specified index.
+charCodeAt(index); // :       // Returns the Unicode of the character at the specified index.
+codePointAt(index); //
+//Obtaining portions of a strings
+slice(startIndex, endIndex); // : Extracts a part of a string.
+substring(startIndex, endIndex); // : Extracts characters from a string between two specified indices.
 split(separator, limit); // : Splits a string into an array of substrings.
-includes(searchString, position); // : Checks if a string contains another string.
-endsWith(searchString, length); // : Checks if a string ends with another string.
-indexOf(searchValue, fromIndex); // : Returns the position of the first occurrence of a specified value.
-lastIndexOf(searchValue, fromIndex); // : Returns the position of the last occurrence of a specified value.
-startsWith(searchString, position); // : Checks if a string starts with another string.
-repeat(count); // : Returns a new string with a specified number of copies of the string.
+//Searching A String
+indexOf(searchValue, fromIndex); // :      Returns the position(index) of the first occurrence of a specified value.
+lastIndexOf(searchValue, fromIndex); // :  Returns the position(index) of the last occurrence of a specified value.
+// Boolean Searching Functions In ES6 And Later.
+startsWith(searchString, position); // : Checks if a string starts with another string.(position ==== index)
+endsWith(searchString, length); // :     Checks if a string ends with another string.
+includes(searchString, position); // :   Checks if a string contains another string. (position ==== index)
+//Creating Modified Version Of A String.
 replace(searchValue, newValue); // : Replaces specified values in a string.
-localeCompare(compareString, locales, options); // : Compares two strings in the current locale.
 toLowerCase(); // : Converts a string to lowercase.
 toUpperCase(); // : Converts a string to uppercase.
-toString(); // : Returns the string representation of an object.
-valueOf(); // : Returns the primitive value of a String object.
+normalize();
+// String Padding Functions In ES2017
 padStart(targetLength, padString); // : Pads the start of a string.
-padEnd(targetLength, padString); // : Pads the end of a string.
-trim(); // : Removes whitespace from both sides of a string.
+padEnd(targetLength, padString); // :   Pads the end of a string.
+// Space Trimming Functions. trim Is ES5, Others Are ES2019
+trim(); // :                   Removes whitespace from both sides of a string.
 trimStart() / trimLeft(); // : Removes whitespace from the start of a string.
-trimEnd() / trimRight(); // : Removes whitespace from the end of a string.
+trimEnd() / trimRight(); // :  Removes whitespace from the end of a string.
+
+repeat(count); // : Returns a new string with a specified number of copies of the string.
+toString(); // : Returns the string representation of an object.
+valueOf(); // :  Returns the primitive value of a String object.
+localeCompare(compareString, locales, options); // : Compares two strings in the current locale.
 match(regexp); // : Matches a string against a regular expression.
 search(regexp); // : Searches a string for a match against a regular expression.
 
