@@ -77,7 +77,11 @@ Math.sqrt(x);
 *************************************************************************************************/
 // Static Methods:
 Number.isFinite(value); // : //Checks if the value is a finite number.
+<<<<<<< HEAD
 //                           Return tru if value is other than Infinity, -Infinity or NAN
+=======
+//                           //Return true if value is other than Infinity, -Infinity or NAN
+>>>>>>> ebb5d5566ba3ea19909cd0a5b4757eb87023075f
 Number.isInteger(value); // :Checks if the value is an integer.
 Number.isNaN(value); // : Checks if the value is NaN.
 Number.isSafeInteger(value); // : Checks if the value is a safe integer.
