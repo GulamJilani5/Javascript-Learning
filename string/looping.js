@@ -8,10 +8,12 @@ for (let char of str) {
 
 ///////////////////////////////////////
 //////////////// LOOPING A STRING
-///////// for...in loop
+///////// for...in loop Iterates Over Keys (Indexes as Strings) ***** Truly importan to remember because
+//                                                                     index is string not number
 
 // const str = 'Jilani';
 // for (let i in str) {
+// i is a string
 //   //console.log(i) // It will give index
 //   console.log(str[i]) // It will give value
 // }
