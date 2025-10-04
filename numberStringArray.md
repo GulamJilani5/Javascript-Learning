@@ -1,3 +1,5 @@
+🔵🟢🔴➡️⭕🟠🟦🟣🟥🟧✔️⏺️ ☑️ • ‣ → ⁕
+
 // Number Methods
 
 /* Static Methods  */
