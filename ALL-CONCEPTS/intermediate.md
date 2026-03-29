@@ -2,9 +2,9 @@
 
 # ⏺️ Intermediate Concepts/Interview Questions
 
-## ➡️ Concepts
+## ➡️ ES 6 Features
 
-#### 🟦 ES 6 Features
+#### 🟦 Concepts
 
 - ###### 🔵 let & conts
 - ###### 🔵 Destructuring (Arrays & Objects)
@@ -14,7 +14,11 @@
 - ###### 🔵 Rest Operator (...)
   - Find `D:\Jilani\learning\Javascript-Learning\js-interview\interview\es6`
 
-#### 🟦 Promises
+#### 🟦 Interview Questions
+
+## ➡️ Promises
+
+#### 🟦 Concepts
 
 - ###### 🔵 callback(non es6) ⭕
 - ###### 🔵 setTimeout() and setInterval() (non es6) ⭕
@@ -22,36 +26,42 @@
 - ###### 🔵 async await(ES6)
 - ###### 🔵 event loop(ES6)
 
-#### 🟦 defer vs async
+#### 🟦 Interview Questions
+
+## ➡️ defer vs async
+
+#### 🟦 Concepts
+
+#### 🟦 Interview Questions
 
 - Find ``
 
-#### 🟦 Doctype
+## ➡️ Doctype
+
+#### 🟦 Concepts
+
+#### 🟦 Interview Questions
 
 - Find ``
 
-#### 🟦 event delegation
+## ➡️ event delegation
+
+#### 🟦 Concepts
 
 - ###### 🔵 event Propagation (bubbling & capturing)
 
-#### 🟦 HTML 5 API
+#### 🟦 Interview Questions
+
+## ➡️ HTML 5 API
+
+#### 🟦 Concepts
+
+#### 🟦 Interview Questions
 
 - Find ``
 
-#### 🟦 SVG
+## ➡️ SVG
 
----
+#### 🟦 Concepts
 
-## ➡️ Interview
-
-#### 🟦
-
-- ###### 🔵
-- ###### 🔵
-- ###### 🔵
-
-#### 🟦
-
-- ###### 🔵
-- ###### 🔵
-- ###### 🔵
+#### 🟦 Interview Questions

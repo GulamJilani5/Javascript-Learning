@@ -2,16 +2,20 @@
 
 # ⏺️ Advance Concepts/Interview Questions
 
-## ➡️ Concepts
+## ➡️ debounce vs throttle
 
-#### 🟦 debounce vs throttle
+#### 🟦 Concepts
 
 - ###### 🔵 debounce
   - Find ``
 - ###### 🔵 throttle
   - Find ``
 
-#### 🟦 Security:
+#### 🟦 Interview Questions
+
+## ➡️ Security:
+
+#### 🟦 Concepts
 
 - ###### 🔵 Authentication: JWT, OAuth2.
   - Find ``
@@ -24,14 +28,22 @@
   - Find ``
 - ###### 🔵 DangerouslySetInnerHTML – risk?
 
-#### 🟦 Networking:
+#### 🟦 Interview Questions
+
+## ➡️ Networking:
+
+#### 🟦 Concepts
 
 - ###### 🔵 Fetch & Axios
   - Find `D:\Jilani\learning\React-Learning\reactjs-concepts\api-calling\axiosvsfetch.md`
 - ###### 🔵 webSockket
 - ###### 🔵 server Sent event.
 
-#### 🟦 Storage:
+#### 🟦 Interview Questions
+
+## ➡️ Storage:
+
+#### 🟦 Concepts
 
 - ###### 🔵 localStorage
   - Find ``
@@ -46,20 +58,4 @@
   - Find ``
 - ###### 🔵 coercion
 
----
-
-## ➡️ Interview
-
-#### 🟦
-
-- ###### 🔵
-
-- ###### 🔵
-
-#### 🟦
-
-- ###### 🔵
-
-- ###### 🔵
-
-- ###### 🔵
+#### 🟦 Interview Questions

@@ -2,9 +2,9 @@
 
 # ⏺️ Fundamental Concepts/Interview Questions
 
-## ➡️ Concepts
+## ➡️ let & conts vs var
 
-#### 🟦 let & conts vs var
+#### 🟦 Concepts
 
 - Find ``
 - ###### 🔵 execution context
@@ -13,69 +13,86 @@
   - Find ``
 - ###### 🔵 Hoisting
 
-#### 🟦 function declaration vs function expression vs arrow function
+#### 🟦 Interview Questions
 
-#### 🟦 IIFE
+## ➡️ function declaration vs function expression vs arrow function
+
+#### 🟦 Concepts
+
+#### 🟦 Interview Questions
+
+## ➡️ IIFE
+
+#### 🟦 Concepts
+
+#### 🟦 Interview Questions
 
 - Find ``
 
-#### 🟦 call, apply & bind
+## ➡️ call, apply & bind
+
+#### 🟦 Concepts
+
+#### 🟦 Interview Questions
 
 - Find ``
 
-#### 🟦 Closure
+## ➡️ Closure
+
+#### 🟦 Concepts
+
+#### 🟦 Interview Questions
 
 - Find ``
 
-#### 🟦 HOF
+## ➡️ HOF
+
+#### 🟦 Concepts
+
+#### 🟦 Interview Questions
 
 - ###### 🔵 map
 - ###### 🔵reduce
 - ###### 🔵filter
 
-#### 🟦 Currying
+## ➡️ Currying
+
+#### 🟦 Concepts
+
+#### 🟦 Interview Questions
 
 - Find ``
 
-#### 🟦 slice & splice
+## ➡️ slice & splice
 
-#### 🟦 4 ways of creating Objects
+#### 🟦 Concepts
 
-#### 🟦 Shallow Copy vs Deep Copy
+#### 🟦 Interview Questions
 
-#### 🟦 BOM & DOM
+## ➡️ 4 ways of creating Objects
+
+#### 🟦 Concepts
+
+#### 🟦 Interview Questions
+
+## ➡️ Shallow Copy vs Deep Copy
+
+#### 🟦 Concepts
+
+#### 🟦 Interview Questions
+
+## ➡️ BOM & DOM
+
+#### 🟦 Concepts
+
+#### 🟦 Interview Questions
 
 - Find ``
 
-#### 🟦 How Browser reads js/jsx
+## ➡️ How Browser reads js/jsx
+
+#### 🟦 Concepts
+
+#### 🟦 Interview Questions
 
 - Find ``
-
----
-
-## ➡️ Interview
-
-#### 🟦
-
-- ###### 🔵
-  - Find ``
-- ###### 🔵
-
-- ###### 🔵
-  - Find ``
-
-#### 🟦
-
-- ###### 🔵
-
-- ###### 🔵
-
-- ###### 🔵
-
-#### 🟦
-
-- ###### 🔵
-
-- ###### 🔵
-
-- ###### 🔵
